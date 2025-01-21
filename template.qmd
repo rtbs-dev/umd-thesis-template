@@ -3,13 +3,13 @@ title: |
   NONLINEAR PULSE PROPAGATION THROUGH
   AN OPTICAL FIBER: THEORY AND EXPERIMENT
 format:
-  thesis-umd-pdf:
+  umd-thesis-pdf:
     keep-tex: true  
     pdf-engine: lualatex
     pdf-engine-opts: 
       - '--no-shell-escape'
       - '--halt-on-error'
-  thesis-umd-html: default
+  umd-thesis-html: default
 author: Bhaskar Khubchandani
 year: 2004
 department: Computer Science
@@ -31,8 +31,8 @@ abstract: |
 prelim:
   Acknowledgements: |
     I would like to acknowledge...
-  # Preface: 
-  # Foreward: 
+  # Preface:  # add a Preface here 
+  # Foreward:  # add a fwd here
   Dedication: |
     to my friends and family 
 keywords: [template, demo]
