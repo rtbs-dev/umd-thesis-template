@@ -1,0 +1,18 @@
+\clearpage
+\phantomsection %create the correct anchor for the bookmark
+\addcontentsline{toc}{chapter}{$it.key$}
+$if(doublespaced)$
+\renewcommand{\baselinestretch}{2}
+$endif$
+\small\normalsize
+\hbox{\ }
+ 
+\vspace{.5in}
+
+\begin{center}
+\large{$it.key$} 
+\end{center} 
+
+\vspace{1ex}
+
+$it.value$

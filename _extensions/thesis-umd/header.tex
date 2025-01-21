@@ -1,0 +1,45 @@
+\directlua{pdf.setminorversion(6)}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[english]{babel}
+\usepackage[strict]{csquotes}
+
+% Change contents title to Table of Contents
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Table of contents}%
+}
+
+% Bibliography
+\usepackage[%
+	backend=biber,
+	style=ieee, % pick whatever style you want
+	sorting=ydnt,
+	isbn=true,
+]{biblatex}
+\addbibresource{bibliography.bib}
+
+% Line spacing
+\usepackage{setspace}
+
+\usepackage{etoolbox}
+
+\usepackage[unicode=false]{hyperref}
+
+% \usepackage[notbib,notindex]{tocbibind}
+
+\usepackage[%
+	%textwidth=345pt, % Default textwidth
+	% marginpar=4cm, % Make marginal notes wider
+	% includemp, % Include marginpar in width
+	margin=1in,
+	left=1.5in, % Left margin must be at least 1.5 inch
+]{geometry}
+
+% Toggle for double spaced or not
+% \newbool{doublespaced}
+\usepackage{titlesec}
+   
+\titleformat{\chapter}[display]{\normalfont\large}{Chapter \ \thechapter:}{1em}{}
+\titleformat{\section}{\normalfont\large}{\thesection}{1em}{}

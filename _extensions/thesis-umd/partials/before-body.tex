@@ -1,0 +1,17 @@
+
+% \frontmatter
+\pagestyle{empty}
+\singlespacing
+$_abstract.tex()$
+$_titlepage.tex()$
+
+
+\pagestyle{plain} \pagenumbering{roman} \setcounter{page}{2}
+
+${if(doublespaced)}\doublespacing ${ endif }
+
+${for(prelim/pairs)}
+$it:_prelim.tex()$
+${endfor}
+
+\cleardoublepage

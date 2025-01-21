@@ -1,0 +1,31 @@
+title: UMD Thesis Template
+author: Rachael T. Sexton
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    common:
+      toc: true
+      filters:
+        - umd-thesis.lua
+    pdf:
+      # mainfont: "EB Garamond"
+      block-headings: false
+      subparagraph: yes
+      top-level-division: chapter
+      include-in-header: header.tex
+      template-partials:
+        - partials/_title-name.tex
+        - partials/doc-class.tex
+        - partials/_abstract.tex
+        - partials/_titlepage.tex
+        - partials/_prelim.tex
+        - partials/before-body.tex
+        - partials/toc.tex
+      format-resources: 
+        - thesis.cls
+      cite-method: biblatex
+      biblio-style: ieee
+    html:
+      css: styles.css
+

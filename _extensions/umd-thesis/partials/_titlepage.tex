@@ -1,0 +1,33 @@
+%Titlepage
+
+\thispagestyle{empty} \hbox{\ } \vspace{1.5in}
+\renewcommand{\baselinestretch}{1}
+\small\normalsize
+\begin{center}
+
+$if(title)$
+\large{\uppercase{$title$}}\\
+$endif$
+\ \\ 
+\ \\
+\large{by} \\
+\ \\
+\large{$author$}
+\ \\
+\ \\
+\ \\
+\ \\
+\normalsize
+Dissertation submitted to the Faculty of the Graduate School of the \\
+University of Maryland, College Park in partial fulfillment \\
+of the requirements for the degree of \\
+Doctor of Philosophy \\
+$year$
+\end{center}
+
+\vspace{7.5em}
+
+\noindent Advisory Committee: \\
+${ for(committee) }
+\hbox{\ }\hspace{.5in}${it:_title-name.tex() }${ if(it.role) }, ${ it.role }${ endif } \\
+${ endfor } 
